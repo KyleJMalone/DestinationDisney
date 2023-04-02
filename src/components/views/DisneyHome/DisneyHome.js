@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { Authorized } from "./views/Authorized";
-import { ApplicationViews } from "./views/ApplicationViews";
-import { Login } from "./auth/Login";
-import { Register } from "./auth/Register";
+import { Authorized } from "../Authorized";
+import { ApplicationViews } from "../ApplicationViews";
+import { NavBar } from ".views/NavBar";
+import { Login } from "../../auth/Login";
+import { Register } from "../../auth/Register";
 
 export const DisneyHome = () => {
   return (
@@ -15,6 +16,7 @@ export const DisneyHome = () => {
         element={
           <Authorized>
             <>
+              <NavBar />
               <ApplicationViews />
             </>
           </Authorized>

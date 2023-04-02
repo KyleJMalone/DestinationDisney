@@ -1,0 +1,10 @@
+.navbar {
+    overflow: auto;
+    list-style-type: none;
+    font-family:monospace ;
+    font-size: x-large;
+    display: flex;  
+    justify-content: space-between;
+    object-fit: cover;
+    background-color:RGB(28, 70, 142) ;
+}
