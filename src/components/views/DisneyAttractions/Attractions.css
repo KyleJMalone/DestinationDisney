@@ -1,6 +1,69 @@
 .attractionsPage {
-    background: linear-gradient(90deg, #8EFFFF 21%, #fff 100%);
-    border: 20px solid rgba(249, 225, 255, 0.95);
-    font-family: 'New Walt Disney Font', sans-serif;
-    font-size: x-large;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    }
+    
+    .funTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color:#1C468E;
+    text-shadow: 2px 2px #444;
+    }
+    
+    .attractionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .DisneyAttraction {
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    }
+    
+    .DisneyAttraction:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .attractionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    }
+    
+    .attractionName {
+    font-size: 2rem;
+    color: #1C468E;
+    text-shadow: 1px 1px #444;
+    }
+    
+    .attractionType {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: uppercase;
+    }
+    
+    .attractionBody {
+    margin-top: 1rem;
+    }
+    
+    h4 {
+    font-size: 1.2rem;
+    color: #1C468E;
+    }
+    
+    p {
+    font-size: 1rem;
+    line-height: 1.5;
+    }

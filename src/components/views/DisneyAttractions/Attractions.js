@@ -22,28 +22,27 @@ export const AttractionsForm = () => {
   return (
     <>
     
-      <article className="attractionsPage">
-        <h3>Disney Attractions:</h3>
-       
-        {attractions.map((attraction) => (
-          <section key={attraction.id} className="Disney Attractions">
-            <br />
-            <br />
-            <div class="container-fluid">
-            <h2>Attraction Name:</h2>
-            <header>{attraction.attractionName}</header>
-            <h2>Description:</h2>
-            <div>{attraction.attractionDescription}</div>
-            <h2>Attraction Type:</h2>
-            <div>{attraction.attractionType}</div>
-            <h2>Location:</h2>
-            <div>{attraction.attractionParkLocation}</div>
-            <h2>Wait Time:</h2>
-            <div>{attraction.attractionWaitTime}</div>
-            </div>
-          </section>
-        ))}
-      </article>
+    <article className="attractionsPage">
+  <h3 className="funTitle">Explore Disney Attractions:</h3>
+  <div className="attractionsContainer">
+    {attractions.map((attraction) => (
+      <section key={attraction.id} className="DisneyAttraction">
+        <div className="attractionHeader">
+          <h2 className="attractionName">{attraction.attractionName}</h2>
+          <div className="attractionType">{attraction.attractionType}</div>
+        </div>
+        <div className="attractionBody">
+          <h4>Description:</h4>
+          <p>{attraction.attractionDescription}</p>
+          <h4>Location:</h4>
+          <p>{attraction.attractionParkLocation}</p>
+          <h4>Wait Time:</h4>
+          <p>{attraction.attractionWaitTime}</p>
+        </div>
+      </section>
+    ))}
+  </div>
+</article>
     </>
   );
 };

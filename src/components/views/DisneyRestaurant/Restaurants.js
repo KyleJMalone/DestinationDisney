@@ -22,32 +22,24 @@ export const RestaurantsForm = () => {
   return (
     <>
     
-      <article className="restaurantsPage">
-        <h3>Disney Restaurants:</h3>
-       
-        {restaurant.map((restaurants) => (
-          <section key={restaurants.id} className="Disney Restaurants">
-            <br />
-            <br />
-            <div class="container-fluid">
-            <h2>Restaurant Name:</h2>
-            <header>{restaurants.restarauntName}</header>
-            <h2>Location:</h2>
-            <div>{restaurants.restaurantParkLocation}</div>
-            <h2>Description:</h2>
-            <div>{restaurants.restaurantDescription}</div>
-            <h2>Food Type:</h2>
-            <div>{restaurants.restaurantFoodType}</div>
-            <h2>Restaurant Type:</h2>
-            <div>{restaurants.restaurantType}</div>
-            <h2>Price Range:</h2>
-            <div>{restaurants.priceRange}</div>
-            <h2>Plant Based Options:</h2>
-            <div>{restaurants.plantBasedOptions}</div>
-            </div>
-          </section>
-        ))}
-      </article>
+    <article className="restaurantsPage">
+  <h1>Disney Restaurants</h1>
+  <div className="restaurantsContainer">
+    {restaurant.map((restaurants) => (
+      <section key={restaurants.id} className="DisneyRestaurant">
+        <h2>{restaurants.restarauntName}</h2>
+        <div className="restaurantInfo">
+          <p><strong>Location:</strong> {restaurants.restaurantParkLocation}</p>
+          <p><strong>Description:</strong> {restaurants.restaurantDescription}</p>
+          <p><strong>Food Type:</strong> {restaurants.restaurantFoodType}</p>
+          <p><strong>Restaurant Type:</strong> {restaurants.restaurantType}</p>
+          <p><strong>Price Range:</strong> {restaurants.priceRange}</p>
+          <p><strong>Plant Based Options:</strong> {restaurants.plantBasedOptions}</p>
+        </div>
+      </section>
+    ))}
+  </div>
+</article> 
     </>
   );
 };

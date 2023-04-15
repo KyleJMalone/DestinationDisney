@@ -1,6 +1,55 @@
 .restaurantsPage {
-    background: linear-gradient(90deg, #8EFFFF 21%, #fff 100%);
-    border: 20px solid rgba(249, 225, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'New Walt Disney Font', sans-serif;
-    font-size: x-large;
-}
+    background-color: #f2f2f2; /* Change to a darker shade or pattern /
+    border: 1px solid #000; / Change to a solid line */
+    }
+    
+    .restaurantsPage h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    }
+    
+    .restaurantsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .DisneyRestaurant {
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out; /* Add hover transition effect */
+    }
+    
+    .DisneyRestaurant:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add hover shadow effect */
+    }
+    
+    .DisneyRestaurant h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    }
+    
+    .restaurantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    }
+    
+    .restaurantInfo p {
+    margin: 0.5rem 0;
+    }
+    
+    .restaurantInfo strong {
+    font-weight: bold;
+    }

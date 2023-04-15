@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Parks.css"
+import MickeyMouse from "./MickeyMouse.jpg"
 export const ParksForm = () => {
   const navigate = useNavigate();
   const localProjectUser = localStorage.getItem("capstone_user");
@@ -21,27 +22,25 @@ export const ParksForm = () => {
 
   return (
     <>
-    
-      <article className="parksPage">
-        <h3>Disney Parks:</h3>
-       
-        {parks.map((park) => (
-          <section key={park.id} className="Disney Parks">
-            <br />
-            <br />
-            <div class="container-fluid">
-            <h2>Park Name:</h2>
-            <header>{park.parkName}</header>
-            <h2>Location:</h2>
-            <div>{park.parkLocation}</div>
-            <h2>Hours:</h2>
-            <div>{park.parkHours}</div>
-            <h2>Transportation:</h2>
-            <div>{park.transportType}</div>
-            </div>
-          </section>
-        ))}
-      </article>
+<article className="parksPage">
+  <img src={MickeyMouse} alt="Mickey Mouse" />
+  <div className="parksContainer">
+    {parks.map((park) => (
+      <section key={park.id} className="DisneyPark">
+        <h2>{park.parkName}</h2>
+        <div className="parkInfo">
+          <h3>Location</h3>
+          <p>{park.parkLocation}</p>
+          <h3>Hours</h3>
+          <p>{park.parkHours}</p>
+          <h3>Transportation</h3>
+          <p>{park.transportType}</p>
+        </div>
+      </section>
+    ))}
+  </div>
+</article>
+
     </>
   );
 };

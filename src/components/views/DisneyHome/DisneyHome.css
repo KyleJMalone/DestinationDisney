@@ -1,0 +1,28 @@
+.landingPage {
+    font-family: 'New Walt Disney Font', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .landingPage h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landingPage p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .landingPage h1 {
+      font-size: 3rem;
+    }
+  
+    .landingPage p {
+      font-size: 1.5rem;
+    }
+  }

@@ -22,30 +22,23 @@ export const ResortsForm = () => {
   return (
     <>
     
-      <article className="resortsPage">
-        <h3>Disney Resorts:</h3>
-       
-        {resorts.map((resort) => (
-          <section key={resort.id} className="Disney Resorts">
-            <br />
-            <br />
-            <div class="container-fluid">
-            <h2>Resort Name:</h2>
-            <header>{resort.resortName}</header>
-            <h2>Name Of Guests:</h2>
-            <div>{resort.nameOfGuests}</div>
-            <h2>Resort Location:</h2>
-            <div>{resort.resortLocation}</div>
-            <h2>Date Arrived:</h2>
-            <div>{resort.dateArrived}</div>
-            <h2>Date Departed:</h2>
-            <div>{resort.dateDeparted}</div>
-            <h2>Transportation:</h2>
-            <div>{resort.transportType}</div>
-            </div>
-          </section>
-        ))}
-      </article>
+    <article className="resortsPage">
+  <h1>Disney Resorts</h1>
+  <div className="resortsContainer">
+    {resorts.map((resort) => (
+      <section key={resort.id} className="DisneyResort">
+        <h2>{resort.resortName}</h2>
+        <div className="resortInfo">
+          <p><strong>Guests:</strong> {resort.nameOfGuests}</p>
+          <p><strong>Location:</strong> {resort.resortLocation}</p>
+          <p><strong>Arrival Date:</strong> {resort.dateArrived}</p>
+          <p><strong>Departure Date:</strong> {resort.dateDeparted}</p>
+          <p><strong>Transportation:</strong> {resort.transportType}</p>
+        </div>
+      </section>
+    ))}
+  </div>
+</article>
     </>
   );
 };
