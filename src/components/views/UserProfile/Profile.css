@@ -1,0 +1,64 @@
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .userProfile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .userProfile h2 {
+    margin-top: 1rem;
+  }
+  
+  .userProfile header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .userProfile div {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.comment_edit {
+    background-color: #0066cc;
+    color: #fff;
+  }
+  
+  .btn.comment_edit:hover {
+    background-color: #0052a3;
+  }
+  
+  .btn.comment_delete {
+    background-color: #cc0000;
+    color: #fff;
+    margin-left: 1rem;
+  }
+  
+  .btn.comment_delete:hover {
+    background-color: #990000;
+  }
+  

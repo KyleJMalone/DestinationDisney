@@ -9,7 +9,7 @@
   /* Style for the parks image */
   .parksPage img {
     width: 500px;
-    height: 400px;
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -19,6 +19,7 @@
   .parksPage h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color:#1C468E;
   }
   
   /* Style for the parks container */

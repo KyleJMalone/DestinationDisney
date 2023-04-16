@@ -23,7 +23,7 @@ export const ResortsForm = () => {
     <>
     
     <article className="resortsPage">
-  <h1>Disney Resorts</h1>
+  <h1>Stay At Disney Resorts</h1>
   <div className="resortsContainer">
     {resorts.map((resort) => (
       <section key={resort.id} className="DisneyResort">

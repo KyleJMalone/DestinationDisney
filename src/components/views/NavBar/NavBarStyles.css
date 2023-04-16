@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color:#1C468E;
+  color:white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
@@ -26,7 +27,7 @@
 }
 
 .navbar__link {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -37,7 +38,7 @@
 
 .navbar__link:hover,
 .navbar__link.active {
-  background-color: #f9f9f9;
+  background-color: #E4B4B4;
 }
 
 .navbar__search {
@@ -64,6 +65,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 
 .navbar__search-button:hover {
   background-color: #005ea3;

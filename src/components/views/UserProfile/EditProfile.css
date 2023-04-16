@@ -1,0 +1,50 @@
+.edit-profile-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .edit-profile-form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #0077cc;
+  }
+  
+  .save-profile-button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-profile-button:hover {
+    background-color: #005ea2;
+  }
+  

@@ -10,7 +10,7 @@
     font-size: 3rem;
     margin-bottom: 1rem;
     color:#1C468E;
-    text-shadow: 2px 2px #444;
+   
     }
     
     .attractionsContainer {
@@ -45,7 +45,7 @@
     .attractionName {
     font-size: 2rem;
     color: #1C468E;
-    text-shadow: 1px 1px #444;
+
     }
     
     .attractionType {

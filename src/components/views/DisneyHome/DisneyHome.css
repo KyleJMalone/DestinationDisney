@@ -1,28 +1,31 @@
 .landingPage {
+    background-color: #f8f8f8;
     font-family: 'New Walt Disney Font', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+  }
+  
+  .heroSection {
+    color:#1C468E;
     background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ddd;
   }
   
-  .landingPage h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
   }
   
-  .landingPage p {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
   
-  @media screen and (max-width: 768px) {
-    .landingPage h1 {
-      font-size: 3rem;
-    }
-  
-    .landingPage p {
-      font-size: 1.5rem;
-    }
+  img {
+    max-width: 100%;
+    margin-top: 2rem;
   }
+  

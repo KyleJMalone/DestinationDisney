@@ -35,9 +35,26 @@ export default function NavBar() {
             Things To Do
           </NavLink>
         </li>
+        <li className="navbar__item">
+          <NavLink className="navbar__link" activeClassName="active" to="/Profile">
+            View Profile
+          </NavLink>
+        </li>
         <li className="navbar__item navbar__search">
           <input className="navbar__search-input" type="text" placeholder="Search..." />
           <button className="navbar__search-button">Search</button>
+        </li>
+        <li className="navbar__item navbar__logout">
+          <Link
+            className="navbar__link"
+            to="/Login"
+            onClick={() => {
+              localStorage.removeItem("project_user");
+              navigate("/", { replace: true });
+            }}
+          >
+            Logout
+          </Link>
         </li>
       </ul>
     </nav>

@@ -23,6 +23,7 @@ export const ParksForm = () => {
   return (
     <>
 <article className="parksPage">
+<h1>Disney Parks</h1>
   <img src={MickeyMouse} alt="Mickey Mouse" />
   <div className="parksContainer">
     {parks.map((park) => (
